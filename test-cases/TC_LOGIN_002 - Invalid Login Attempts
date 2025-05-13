@@ -1,0 +1,44 @@
+Test Case ID: TC_LOGIN_002
+Title: Unsuccessful Login with Invalid Credentials
+
+Test Scenario:
+The user performs 3 separate login attempts using incorrect credentials. Each attempt should fail and display an error message.
+
+Preconditions:
+User is on the login page: https://rahulshettyacademy.com/loginpagePractise/
+Browser is open and working
+
+Test Steps:
+
+Attempt 1: Invalid Username
+1. Open the login page
+2. Enter username: rahulshetty
+3. Enter password: learning
+4. Check the terms and conditions checkbox
+5. Click the Login button
+6. Wait for the error message or page to remain the same
+
+Attempt 2: Invalid Password
+1. Refresh or reopen the login page
+2. Enter username: rahulshettyacademy
+3. Enter password: 123456
+4. Check the terms and conditions checkbox
+5. Click the Login button
+6. Wait for the error message
+
+Attempt 3: Both Username and Password Invalid
+1. Refresh or reopen the login page
+2. Enter username: rahulshett
+3. Enter password: 123456
+4. Check the terms and conditions checkbox
+5. Click the Login button
+6. Wait for the error message
+
+Expected Results:
+In all 3 attempts, the user should not be redirected.
+An error message should appear mentioning wrong username or password.
+
+Postconditions:
+User remains on the login page after each failed attempt. Login is unsuccessful.
+
+Status: Pass
